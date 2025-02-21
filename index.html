@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Stock Management</a></li>
+      <li><a href="#">Billing</a></li>
+      <li><a href="#">Product Requirement</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="login-container">
+    <div class="login-box">
+      <img src="assets/logo.jpg" alt="Grocery Logo" class="logo">
+      <h2>Admin Login</h2>
+      <form id="loginForm" method="POST" action="http://localhost/logfrontpg.html">
+        <input type="text" placeholder="Username" id="username" required>
+        <input type="password" placeholder="Password" id="password" required>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>

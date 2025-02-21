@@ -1,0 +1,55 @@
+
+
+  <!-- 3rd attempt -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock List</title>
+  <link rel="stylesheet" href="stock.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="dashboard.php">Dashboard</a></li>
+      <li><a href="stock.html">Stock Management</a></li>
+      <li><a href="billing.php">Billing</a></li>
+      <li><a href="#">Product Requirement</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h1>Available Stock</h1> -
+
+    <!-- Add Product Form -->
+    <form id="addProductForm" method="POST" action="http://localhost/stock.php">
+      <input type="text" id="name" placeholder="Product Name" name="name" required>
+      <input type="number" id="quantity" placeholder="Quantity" name="quantity" required>
+      <input type="number" id="price" placeholder="Price" step="0.01" name="price" required>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <table border="2px">
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="stockList">
+      
+      </tbody>
+    </table>
+  </div>
+
+  
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
